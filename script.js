@@ -27,6 +27,6 @@ function currentSlide(n) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
 
-  // slides[n - 1].style.display = "block";
+  slides[n - 1].style.display = "block";
   dots[n - 1].className += " active";
 }
