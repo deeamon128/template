@@ -113,7 +113,7 @@ li:nth-child(5) a {
 .carousel {
   position: relative;
   overflow: hidden;
-  padding: 20px;
+  margin: 20px 200px 20px 200px;
 }
 
 .carousel-title {
@@ -122,7 +122,7 @@ li:nth-child(5) a {
 }
 
 .product-container {
-  padding: 0 8vw;
+  padding: 0 10vw;
   display: flex;
   overflow-x: auto;
   scroll-behavior: smooth;
