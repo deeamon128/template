@@ -186,7 +186,6 @@ li:nth-child(5) a {
 
 .dots {
   display: flex;
-  margin-top: 20px;
   justify-content: center;
 }
 
