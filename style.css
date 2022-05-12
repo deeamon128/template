@@ -184,6 +184,29 @@ li:nth-child(5) a {
   z-index: 10;
 }
 
+.dots {
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+#dot1,
+#dot2,
+#dot3 {
+  width: 5px;
+  height: 5px;
+  background-color: var(--black);
+  border-radius: 50%;
+  margin: 0px 5px;
+  cursor: pointer;
+}
+
+/* #dot1:active,
+#dot2:active,
+#dot3:active {
+  background-color: #fff;
+} */
+
 /* info banner section */
 
 .info-banner-container {
