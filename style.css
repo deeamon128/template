@@ -189,22 +189,20 @@ li:nth-child(5) a {
   justify-content: center;
 }
 
-#dot1,
-#dot2,
-#dot3 {
-  width: 5px;
-  height: 5px;
+.dot {
+  width: 6px;
+  height: 6px;
+  margin: 0 5px;
   background-color: var(--black);
   border-radius: 50%;
-  margin: 0px 5px;
+  display: inline-block;
+  transition: background-color 0.6s ease;
   cursor: pointer;
 }
 
-/* #dot1:active,
-#dot2:active,
-#dot3:active {
-  background-color: #fff;
-} */
+.active {
+  background-color: #717171;
+}
 
 /* info banner section */
 
