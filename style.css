@@ -1,0 +1,293 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto";
+}
+
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --red: #ff1c1c;
+  --brightred: #b40007;
+  --grey: #d8d8d8;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 12vh;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  color: var(--black);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+li:nth-child(5) a {
+  color: var(--red);
+}
+
+@media screen and (max-width: 1024px) {
+  .nav-links {
+    width: 90%;
+    padding: 0 10px 0 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+}
+
+/* hero banner section */
+
+.hero-image {
+  background-image: url(https://assets.ray-ban.com/is/image/RayBan/Banner_landing_craft_vintage_desktop?$jpeg-full$);
+  background-position: 80%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+  height: 350px;
+}
+
+.hero-title {
+  color: #fff;
+  padding-top: 100px;
+  padding-left: 50px;
+  font-size: 50px;
+  font-weight: 400;
+}
+
+.hero-button {
+  display: block;
+  background-color: var(--white);
+  color: var(--black);
+  width: 200px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  outline-offset: 4px;
+  cursor: pointer;
+  margin-left: 120px;
+  margin-top: 10px;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 1024px) {
+  .hero-image {
+    height: 300px;
+  }
+
+  .hero-title {
+    padding-top: 50px;
+    padding-left: 50px;
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-image {
+    height: 200px;
+  }
+}
+
+/* carousel */
+.carousel {
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.carousel-title {
+  padding-bottom: 25px;
+  text-align: center;
+}
+
+.product-container {
+  padding: 0 10vw;
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.product-container::-webkit-scrollbar {
+  display: none;
+}
+
+.product-card {
+  flex: 0 0 auto;
+  width: 250px;
+  height: 300px;
+  margin-right: 40px;
+  display: flex;
+}
+
+.product-img {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-thumb {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+}
+
+.product-name,
+.product-price {
+  padding: 3px;
+  font-weight: 700;
+}
+
+.cart-btn {
+  display: block;
+  background-color: var(--black);
+  color: var(--white);
+  font-weight: 600;
+  width: 120px;
+  border-radius: 5px;
+  padding: 3px;
+}
+
+.next-btn {
+  border: none;
+  height: 100%;
+  width: 10vw;
+  background-color: var(--white);
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  z-index: 10;
+}
+
+/* info banner section */
+
+.info-banner-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  align-content: stretch;
+  align-items: center;
+  background-color: var(--grey);
+  height: 300px;
+}
+
+.info-banner-division {
+  position: relative;
+  width: 300px;
+  padding-right: 15px;
+  padding-left: 15px;
+  text-align: center;
+}
+
+.info-banner-title {
+  font-size: 1rem;
+  padding-bottom: 5px;
+}
+
+.info-banner-description {
+  padding-bottom: 15px;
+}
+
+.main-icon {
+  padding-bottom: 20px;
+  font-size: 40px;
+}
+
+.info-banner-links {
+  text-align: center;
+  color: var(--black);
+  margin-top: 20px;
+}
+
+.icon {
+  color: var(--black);
+  font-size: 25px;
+  padding-left: 15px;
+}
+
+.vertical-line {
+  width: 1px;
+  height: 140px;
+  background-color: var(--black);
+}
+
+/* promotional banner */
+
+.promotional-banner {
+  background-color: var(--brightred);
+  padding: 40px;
+  margin-top: 30px;
+  position: sticky;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.promotional-banner-title {
+  color: var(--white);
+  font-size: 40px;
+}
+
+.promotional-banner-button {
+  margin-left: 50px;
+  display: block;
+  background-color: var(--white);
+  color: var(--black);
+  width: 180px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  outline-offset: 4px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 1024px) {
+  .promotional-banner-title {
+    color: var(--white);
+    font-size: 20px;
+  }
+
+  .promotional-banner-button {
+    width: 150px;
+    height: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .promotional-banner-title {
+    color: var(--white);
+    font-size: 15px;
+  }
+
+  .promotional-banner-button {
+    width: 130px;
+    height: 30px;
+  }
+}
