@@ -60,7 +60,7 @@ li:nth-child(5) a {
 
 .hero-image {
   background-image: url(https://assets.ray-ban.com/is/image/RayBan/Banner_landing_craft_vintage_desktop?$jpeg-full$);
-  background-position: 80%;
+  background-position: 90%;
   background-size: cover;
   background-repeat: no-repeat;
   z-index: -1;
@@ -110,21 +110,26 @@ li:nth-child(5) a {
 }
 
 /* carousel */
+
 .carousel {
   position: relative;
-  overflow: hidden;
   padding: 20px;
+  overflow: hidden;
+  justify-content: center;
 }
 
 .carousel-title {
+  padding-top: 18px;
   padding-bottom: 25px;
   text-align: center;
 }
 
 .product-container {
-  padding: 0 8vw;
+  width: 960px;
+  padding: 0 6vw;
+  margin-left: 160px;
   display: flex;
-  overflow-x: auto;
+  overflow: hidden;
   scroll-behavior: smooth;
 }
 
@@ -136,30 +141,41 @@ li:nth-child(5) a {
   flex: 0 0 auto;
   width: 250px;
   height: 300px;
-  margin-right: 40px;
-  display: flex;
-}
-
-.product-img {
-  position: relative;
-  width: 100%;
-  height: 350px;
-  overflow: hidden;
+  margin-right: 60px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: center;
+}
+
+.product-image {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
 }
 
 .product-thumb {
   width: 100%;
-  height: 50%;
+  height: 100%;
   object-fit: cover;
+}
+
+.product-info {
+  width: 100%;
+  text-align: center;
 }
 
 .product-name,
 .product-price {
-  padding: 3px;
   font-weight: 700;
+}
+
+.product-name {
+  font-size: 20px;
+  padding-top: 10px;
+}
+
+.product-price {
+  font-size: 15px;
 }
 
 .cart-btn {
@@ -168,8 +184,10 @@ li:nth-child(5) a {
   color: var(--white);
   font-weight: 600;
   width: 120px;
+  padding: 2px;
   border-radius: 5px;
-  padding: 3px;
+  margin-left: 60px;
+  margin-top: 5px;
 }
 
 .next-btn {
@@ -185,6 +203,8 @@ li:nth-child(5) a {
 }
 
 .dots {
+  padding-top: 25px;
+  padding-bottom: 10px;
   display: flex;
   justify-content: center;
 }
@@ -208,10 +228,7 @@ li:nth-child(5) a {
 
 .info-banner-container {
   display: flex;
-  flex-direction: row;
   justify-content: space-evenly;
-  flex-wrap: nowrap;
-  align-content: stretch;
   align-items: center;
   background-color: var(--grey);
   height: 300px;
@@ -235,8 +252,9 @@ li:nth-child(5) a {
 }
 
 .main-icon {
-  padding-bottom: 20px;
   font-size: 40px;
+  width: 50px;
+  height: 50px;
 }
 
 .info-banner-links {
@@ -262,6 +280,7 @@ li:nth-child(5) a {
 .promotional-banner {
   background-color: var(--brightred);
   padding: 40px;
+  height: 100px;
   margin-top: 30px;
   position: sticky;
   bottom: 0;
@@ -273,7 +292,7 @@ li:nth-child(5) a {
 
 .promotional-banner-title {
   color: var(--white);
-  font-size: 40px;
+  font-size: 20px;
 }
 
 .promotional-banner-button {
